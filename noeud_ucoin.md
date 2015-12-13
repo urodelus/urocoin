@@ -47,19 +47,19 @@ Voici un exemple des paramètres:
   
 > Checking UPNp features...
 > UPNp is *not* available, is this a public server (like a VPS) ? (Y/n)**No**
->$ Currency name: **meta_brouzouf**
->$ IPv4 interface: **eth0 192.168.1.50**
->$ IPv6 interface: **None**
->$ Port: **9201**
->$ Remote IPv4: **eth0 192.168.1.50**
->$ Remote IPv6: **None**
->$ Remote port: **9201**
->$ Does this server has a DNS name? **Yes**
->$ DNS name: **urodelus.ddns.net**
->$ You need a keypair to identify your node on the network. Would you like to automatically generate it ? (Y/n) **No**
->$ Key's salt: **\********
->$ Key's password: **\********
->Configuration saved.
+> $ Currency name: **meta_brouzouf**
+> $ IPv4 interface: **eth0 192.168.1.50**
+> $ IPv6 interface: **None**
+> $ Port: **9201**
+> $ Remote IPv4: **eth0 192.168.1.50**
+> $ Remote IPv6: **None**
+> $ Remote port: **9201**
+> $ Does this server has a DNS name? **Yes**
+> $ DNS name: **urodelus.ddns.net**
+> $ You need a keypair to identify your node on the network. Would you like to automatically generate it ? (Y/n) **No**
+> $ Key's salt: **\********
+> $ Key's password: **\********
+> Configuration saved.
 
 Maintenant, on le synchronise avec le réseau :	
 >$ ucoind sync metab.ucoin.io 9201
