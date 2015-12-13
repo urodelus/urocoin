@@ -32,11 +32,8 @@ Et voila, un nouveau système d'exploitation est disponible sur le PC.
 - Afin que le réseau uCoin discute avec votre futur nœud, il faut qu'il retrouve son adresse IP. Elle n'est pas fixe mais déterminée par mon fournisseur d'accès. J'ai alors choisi un service de management de DNS. Après inscription gratuite chez [NO-IP](https://www.noip.com/), un petit logiciel est installé sur le PC et se charge de fournir mon adresse IP chez NO-IP pour la coller sur le nom de domaine que j'ai créé : _urodelus.ddns.net_.
 - Dans la configuration de la box, il faut paramétré cela **"Réseau > DynDNS > Activé"**, puis remplir les champs (dans mon cas : service=no-ip.com, nom d'utilisateur=urodelus, mot de passe=\********, nom de domaine=urodelus.ddns.net).
 - Dans la configuration de la box "**Réseau > NAT > Désactivé UpNp** puis "**Réseau > NAT > Translation de ports** pour ouvrir un port pour le futur nœud, par exemple :
->
 
-Nom | Protocole | Type | Ports externes | Adresse IP de destination | Ports de destination
----------- | -------- | -------- 
-ucoin_node|les deux|Port|9201|192.168.1.50|9201
+>Nom= ucoin_node, Protocole= les deux, Type= port, Ports externes= 9201, Adresse IP de destination= 192.168.1.50, Ports de destination= 9201
 
 ###Installation et paramétrage du nœud uCoin
  Voilà, maintenant passons à ce qui nous intéresse ! Dans Ubuntu, le nœud uCoin est installé en ouvrant le terminal et tapant :
@@ -72,9 +69,9 @@ Voici un exemple des paramètres:
 
 > $ You need a keypair to identify your node on the network. Would you like to automatically generate it ? (Y/n) **No**
 
-> $ Key's salt: **\********
+> $ Key's salt: \********
 
-> $ Key's password: **\********
+> $ Key's password: \********
 
 > Configuration saved.
 
