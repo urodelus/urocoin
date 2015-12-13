@@ -45,11 +45,11 @@ Il faut maintenant le configurer en suivant les instructions :
 
 Voici un exemple des paramètres:
   
-> Checking UPNp features...
-> UPNp is *not* available, is this a public server (like a VPS) ? (Y/n)**No**
-> $ Currency name: **meta_brouzouf**
-> $ IPv4 interface: **eth0 192.168.1.50**
-> $ IPv6 interface: **None**
+ > Checking UPNp features...
+ > UPNp is *not* available, is this a public server (like a VPS) ? (Y/n)**No**
+ > $ Currency name: **meta_brouzouf**
+ > \$ IPv4 interface: **eth0 192.168.1.50**
+ > \$ IPv6 interface: **None**
 > $ Port: **9201**
 > $ Remote IPv4: **eth0 192.168.1.50**
 > $ Remote IPv6: **None**
