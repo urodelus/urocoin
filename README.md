@@ -1,2 +1,3 @@
 # urocoin
-Dépôt transitoire de mes fichiers relatif à uCoin
+Dépôt transitoire de mes fichiers relatifs à uCoin.
+'Prétexte pour apprendre à utilser Github.'
