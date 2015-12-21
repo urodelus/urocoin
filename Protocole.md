@@ -81,7 +81,7 @@ Aucun caractère "nouvelle ligne" existe dans une signature. Pourtant, une signa
 
 This section deals with the various data formats used by UCP.
 
-### Clé publique
+### Clé_publique
 
 #### Définition
 
