@@ -26,7 +26,8 @@
 * [Implementations](#implementations)
 * [References](#references)
 
-## Vocabulary [Top](#Table des matières)
+## Vocabulary
+[Top](#Table des matières)
 
 Mot                   | Description
 --------------------- | -------------
@@ -42,6 +43,7 @@ UCP aims at defining a data format, interpretation of it and processing rules in
 This document describes UCP in a bottom-up logic, so you will find first the details of the protocol (data format) to end with general protocol requirements.
 
 ## Conventions
+[Top](#Table des matières)
 
 ### Documents
 
@@ -78,6 +80,7 @@ Here is an example of expected signature:
 No new line character exists in a signature. However, a signature may be followed by a new line character, hence denoting the end of the signature.
 
 ## Formats
+[Top](#Table des matières)
 
 This section deals with the various data formats used by UCP.
 
