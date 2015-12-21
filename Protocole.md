@@ -10,7 +10,7 @@
   * [Documents](#documents)
   * [Signatures](#signatures)
 * [Formats](#formats)
-  * [Clé publique](#clé publique)
+  * [Clé publique](#clé_publique)
   * [Certification](#certification)
   * [Membership](#membership)
   * [Block](#block)
@@ -81,7 +81,7 @@ Aucun caractère "nouvelle ligne" existe dans une signature. Pourtant, une signa
 
 This section deals with the various data formats used by UCP.
 
-### Clé publique
+### Clé_publique
 
 #### Définition
 
