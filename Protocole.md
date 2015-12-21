@@ -10,7 +10,7 @@
   * [Documents](#documents)
   * [Signatures](#signatures)
 * [Formats](#formats)
-  * [Clé publique](#Clé publique)
+  * [Clé publique](#Clé_publique)
   * [Certification](#certification)
   * [Membership](#membership)
   * [Block](#block)
