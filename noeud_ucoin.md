@@ -33,6 +33,11 @@ Et voila, un nouveau système d'exploitation est disponible sur le PC.
 - Dans la configuration de la box, il faut paramétré cela **"Réseau > DynDNS > Activé"**, puis remplir les champs (dans mon cas : service=no-ip.com, nom d'utilisateur=urodelus, mot de passe=\********, nom de domaine=urodelus.ddns.net).
 - Dans la configuration de la box "**Réseau > NAT > Désactivé UpNp** puis "**Réseau > NAT > Translation de ports** pour ouvrir un port pour le futur nœud, par exemple :
 
+Nom         | Protocole  | Type Ports externes | Adresse IP de destination | Ports de destination
+----------- | ---------- | ------------------- | ------------------------- | --------------------
+ucoin_node  | les deux   | 9201                | 192.168.1.50              | 9201
+
+
 >Nom= ucoin_node, Protocole= les deux, Type= port, Ports externes= 9201, Adresse IP de destination= 192.168.1.50, Ports de destination= 9201
 
 ###Installation et paramétrage du nœud uCoin
