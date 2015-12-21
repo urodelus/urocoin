@@ -26,9 +26,9 @@
 * [Implementations](#implementations)
 * [References](#references)
 
-## Vocabulary
+## Vocabulary [Top](#Table des matières)
 
-Word                  | Description
+Mot                   | Description
 --------------------- | -------------
 UCP                   | Acronyme pour **UC**oin **P**rotocol. A set of rules to create uCoin based currencies.
 Signature             | The cryptographical act of certifying a document using a private key.
@@ -45,7 +45,7 @@ This document describes UCP in a bottom-up logic, so you will find first the det
 
 ### Documents
 
-#### Line endings
+#### Terminaisons de ligne
 
 Please note **very carefully** that every document's line **ENDS with a newline character**, *Unix-style*, that is to say `<LF>`.
 
