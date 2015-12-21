@@ -27,7 +27,6 @@
 * [References](#references)
 
 ## Vocabulary
-[Top](#Table des matières)
 
 Mot                   | Description
 --------------------- | -------------
@@ -43,27 +42,26 @@ UCP aims at defining a data format, interpretation of it and processing rules in
 This document describes UCP in a bottom-up logic, so you will find first the details of the protocol (data format) to end with general protocol requirements.
 
 ## Conventions
-[Top](#Table des matières)
 
 ### Documents
 
 #### Terminaisons de ligne
 
-Please note **very carefully** that every document's line **ENDS with a newline character**, *Unix-style*, that is to say `<LF>`.
+Notez s'il vous plaît ** très soigneusement ** que chaque ligne de chaque document ** se termine avec un caractère retour à la ligne **, *Unix-style*, c'est à dire `<LF>`.
 
-This is a *very important information* as every document is subject to hashes, and Windows-style endings won't produce the expected hashes.
+Cette *information est très importante* car elle touche tous les documents hashés, and Windows-style endings won't produce the expected hashes.
 
-#### Numbering
+#### Numérotation
 
-[Block](#block) numbering starts from `0`. That is, first block is `BLOCK#0`.
+La numérotation des [blocks](#block) commence à `0`. Ainsi, le premier block est le `BLOCK#0`.
 
-#### Currency name
+#### Nom de la monnaie
 
-A valid currency name is composed of alphanumeric characters, space, `-` or `_`.
+Un nom de monnaie valide est composé de caractères alphanumériques, d'espace, `-` (signe moins) ou `_` (souligné).
 
 #### Dates
 
-For any document using a date field, targeted date is to be understood as **UTC+0** reference.
+Pour chaque document utilisant un champs "date", la date attendue est comprise avec la référence **UTC+0**.
 
 ### Signatures
 
@@ -80,7 +78,6 @@ Here is an example of expected signature:
 No new line character exists in a signature. However, a signature may be followed by a new line character, hence denoting the end of the signature.
 
 ## Formats
-[Top](#Table des matières)
 
 This section deals with the various data formats used by UCP.
 
