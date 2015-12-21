@@ -47,7 +47,7 @@ This document describes UCP in a bottom-up logic, so you will find first the det
 
 #### Terminaisons de ligne
 
-Notez s'il vous plaît ** très soigneusement ** que chaque ligne de chaque document ** se termine avec un caractère retour à la ligne **, *Unix-style*, c'est à dire `<LF>`.
+Notez s'il vous plaît **très soigneusement** que chaque ligne de chaque document **se termine avec un caractère retour à la ligne**, *Unix-style*, c'est à dire `<LF>`.
 
 Cette *information est très importante* car elle touche tous les documents hashés, and Windows-style endings won't produce the expected hashes.
 
@@ -67,35 +67,35 @@ Pour chaque document utilisant un champs "date", la date attendue est comprise a
 
 #### Format
 
-Signatures follow [Ed55219 pattern](http://en.wikipedia.org/wiki/EdDSA), and are written under [Base64](http://en.wikipedia.org/wiki/Base64) encoding.
+Les signatures suivent le schéma [Ed55219](https://fr.wikipedia.org/wiki/EdDSA), et sont encodées en [Base64](https://fr.wikipedia.org/wiki/Base64).
 
-Here is an example of expected signature:
+Voici un exemple de signature attendue:
 
     H41/8OGV2W4CLKbE35kk5t1HJQsb3jEM0/QGLUf80CwJvGZf3HvVCcNtHPUFoUBKEDQO9mPK3KJkqOoxHpqHCw==
 
-#### Line endings
+#### Terminaisons de ligne
 
-No new line character exists in a signature. However, a signature may be followed by a new line character, hence denoting the end of the signature.
+Aucun caractère "nouvelle ligne" existe dans une signature. Pourtant, une signature peut être suivie par un caractère "nouvelle ligne", en dénotant dorénavant la fin de la signature.
 
 ## Formats
 
 This section deals with the various data formats used by UCP.
 
-### Clé publiqueic key
+### Clé publique
 
-#### Definition
+#### Définition
 
-A Clé publique is to be understood as an [Ed55219](http://en.wikipedia.org/wiki/EdDSA) Clé publique.
+Une clé publique est entendue tel que définie par prévu par l'[Ed55219](https://fr.wikipedia.org/wiki/EdDSA).
 
-Its format is a [Base58](http://en.wikipedia.org/wiki/Base58) string of 43 or 44 characters, such as the following:
+Son format est une chaîne en [Base58](https://fr.wikipedia.org/wiki/Base58) de 43 ou 44 caractères, tel que ce qui suit:
 
     HsLShAtzXTVxeUtQd7yi5Z5Zh4zNvbu8sTEZ53nfKcqY
 
-A Clé publique is alway paired with a private key, which UCP will never deal with. UCP only deals with Clé publiques and signatures.
+Une clé publique est toujours associée à une clé privée, qui n'est jamais utilisé par l'UCP. L'UCP utilise seulement les clés publiques et les signatures.
 
 ### Certification
 
-#### Definition
+#### Définition
 
 A certification is the generic act of creating a link between a *Clé publique* and *an arbitrary identity*. In UCP, this certification is done through the signature of an identity string by a Clé publique.
 
