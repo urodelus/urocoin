@@ -37,9 +37,6 @@ Nom         | Protocole  | Type Ports externes | Adresse IP de destination | Por
 ----------- | ---------- | ------------------- | ------------------------- | --------------------
 ucoin_node  | les deux   | 9201                | 192.168.1.50              | 9201
 
-
->Nom= ucoin_node, Protocole= les deux, Type= port, Ports externes= 9201, Adresse IP de destination= 192.168.1.50, Ports de destination= 9201
-
 ###Installation et paramétrage du nœud uCoin
  Voilà, maintenant passons à ce qui nous intéresse ! Dans Ubuntu, le nœud uCoin est installé en ouvrant le terminal et tapant :
 >$ curl -kL https: //raw.githubusercontent.com/ucoin-io/ucoin/master/install.sh | bash
