@@ -1,4 +1,4 @@
-# UCP - Le protocole uCoin
+# UCP - le protocole uCoin
 
 > This document is still regularly updated (as of December 2014)
 
@@ -10,7 +10,7 @@
   * [Documents](#documents)
   * [Signatures](#signatures)
 * [Formats](#formats)
-  * [Public key](#public-key)
+  * [Clé publique](#Clé publique)
   * [Certification](#certification)
   * [Membership](#membership)
   * [Block](#block)
@@ -47,7 +47,7 @@ This document describes UCP in a bottom-up logic, so you will find first the det
 
 #### Terminaisons de ligne
 
-Notez s'il vous plaît **très soigneusement** que chaque ligne de chaque document **se termine avec un caractère retour à la ligne**, *Unix-style*, c'est à dire `<LF>`.
+Notez s'il vous plaît **très soigneusement** que chaque ligne de chaque document **se termine avec un caractère "retour à la ligne"**, *Unix-style*, c'est à dire `<LF>`.
 
 Cette *information est très importante* car elle touche tous les documents hashés, and Windows-style endings won't produce the expected hashes.
 
@@ -75,7 +75,7 @@ Voici un exemple de signature attendue:
 
 #### Terminaisons de ligne
 
-Aucun caractère "nouvelle ligne" existe dans une signature. Pourtant, une signature peut être suivie par un caractère "nouvelle ligne", en dénotant dorénavant la fin de la signature.
+Aucun caractère "nouvelle ligne" existe dans une signature. Pourtant, une signature peut être suivie par un caractère "retour à la ligne", en dénotant dorénavant la fin de la signature.
 
 ## Formats
 
@@ -85,9 +85,9 @@ This section deals with the various data formats used by UCP.
 
 #### Définition
 
-Une clé publique est entendue tel que définie par prévu par l'[Ed55219](https://fr.wikipedia.org/wiki/EdDSA).
+Une clé publique est entendue tel que définie par l'[Ed55219](https://fr.wikipedia.org/wiki/EdDSA).
 
-Son format est une chaîne en [Base58](https://fr.wikipedia.org/wiki/Base58) de 43 ou 44 caractères, tel que ce qui suit:
+Son format est une chaîne de 43 ou 44 caractères en [Base58](https://fr.wikipedia.org/wiki/Base58), tel que l'exemple suivant:
 
     HsLShAtzXTVxeUtQd7yi5Z5Zh4zNvbu8sTEZ53nfKcqY
 
