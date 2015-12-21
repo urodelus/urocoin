@@ -1,10 +1,10 @@
-# UCP - uCoin Protocol
+# UCP - Le protocole uCoin
 
 > This document is still regularly updated (as of December 2014)
 
-## Contents
+## Table des matières
 
-* [Contents](#contents)
+* [Table des matières](#Table des matières)
 * [Introduction](#introduction)
 * [Conventions](#conventions)
   * [Documents](#documents)
@@ -30,9 +30,9 @@
 
 Word                  | Description
 --------------------- | -------------
-UCP                   | Acronym for *UCoin Protocol*. A set of rules to create uCoin based currencies.
+UCP                   | Acronyme pour *UC*oin *P*rotocol. A set of rules to create uCoin based currencies.
 Signature             | The cryptographical act of certifying a document using a private key.
-WoT                   | Acronym for *Web of Trust*. A groupment of individuals recognizing each other's identity through public keys and certification mechanisms
+WoT                   | Acronyme pour *W*eb *o*f *T*rust (Toile de confiance). A groupment of individuals recognizing each other's identity through public keys and certification mechanisms
 UD                    | Acronym for *Universal Dividend*. Means money issuance **directly** and **exclusively** by and to WoT members
 
 ## Introduction
@@ -81,23 +81,23 @@ No new line character exists in a signature. However, a signature may be followe
 
 This section deals with the various data formats used by UCP.
 
-### Public key
+### Clé publiqueic key
 
 #### Definition
 
-A public key is to be understood as an [Ed55219](http://en.wikipedia.org/wiki/EdDSA) public key.
+A Clé publique is to be understood as an [Ed55219](http://en.wikipedia.org/wiki/EdDSA) Clé publique.
 
 Its format is a [Base58](http://en.wikipedia.org/wiki/Base58) string of 43 or 44 characters, such as the following:
 
     HsLShAtzXTVxeUtQd7yi5Z5Zh4zNvbu8sTEZ53nfKcqY
 
-A public key is alway paired with a private key, which UCP will never deal with. UCP only deals with public keys and signatures.
+A Clé publique is alway paired with a private key, which UCP will never deal with. UCP only deals with Clé publiques and signatures.
 
 ### Certification
 
 #### Definition
 
-A certification is the generic act of creating a link between a *public key* and *an arbitrary identity*. In UCP, this certification is done through the signature of an identity string by a public key.
+A certification is the generic act of creating a link between a *Clé publique* and *an arbitrary identity*. In UCP, this certification is done through the signature of an identity string by a Clé publique.
 
 ####Identity string
 
@@ -109,7 +109,7 @@ In this document *identifier*, `UserID`, `USER_ID` and `uid` will be indifferent
 
 ##### Definition
 
-A self certification is the act, for a given public key's owner, to sign an identifier *he considers it reflects his identity*. Doing a self-certification is extacly like saying:
+A self certification is the act, for a given Clé publique's owner, to sign an identifier *he considers it reflects his identity*. Doing a self-certification is extacly like saying:
 
 > « This identity refers to me ! »
 
@@ -154,7 +154,7 @@ A complete self-certification:
 
 ##### Definition
 
-A self revocation is the act, for a given public key's owner, to revoke an identity he created for representing himself. Doing a self-revocation is extacly like saying:
+A self revocation is the act, for a given Clé publique's owner, to revoke an identity he created for representing himself. Doing a self-revocation is extacly like saying:
 
 > « Sorry, I made a mistake about this identity. Do not consider it. »
 
@@ -226,8 +226,8 @@ Certification may exists under *inline format* which describes the certification
 
 Where
 
-  * `PUBKEY_FROM` is the certification public key
-  * `PUBKEY_TO` is the public key whose identity is being certified
+  * `PUBKEY_FROM` is the certification Clé publique
+  * `PUBKEY_TO` is the Clé publique whose identity is being certified
   * `BLOCK_NUMBER` is the certification time reference
   * `SIGNATURE` is the certification signature
 
@@ -255,7 +255,7 @@ Note here that a certification *alone* has no meaning: it is only when appended 
 
 ### Membership
 
-In UCP, a member is represented by a public key he is supposed to be the owner. To be integrated in a WoT, the newcomer owner of the key *has to express its will* to integrate the WoT.
+In UCP, a member is represented by a Clé publique he is supposed to be the owner. To be integrated in a WoT, the newcomer owner of the key *has to express its will* to integrate the WoT.
 
 This step is done by issuing a the following document:
 
@@ -279,10 +279,10 @@ Field | Description
 `Version` | Denotes the current structure version.
 `Type` | Type of the document.
 `Currency` | Contains the name of the currency.
-`Issuer` | The public key of the issuer.
+`Issuer` | The Clé publique of the issuer.
 `Block` | Block number and hash. Value is used to target a blockchain and precise time reference for membership's time validity.
 `Membership` | Membership message. Value is either `IN` or `OUT` to express wether a member wishes to opt-in or opt-out the community.
-`UserID` | Identity to use for this public key
+`UserID` | Identity to use for this Clé publique
 `CertTS` | Identity's certification date
 
 #### Validity
@@ -292,7 +292,7 @@ A [Membership](#membership) is to be considered having valid format if:
 * `Version` equals `1`
 * `Type` equals `Membership` value.
 * `Currency` is a valid currency name
-* `Issuer` is a public key
+* `Issuer` is a Clé publique
 * `Membership` matches either `IN` or `OUT` value
 * `Block` starts with an integer value, followed by a dash and an uppercased SHA1 string
 * `UserID` is a non-empty string
@@ -306,7 +306,7 @@ Transaction is the support of money: it allows to materialize coins' ownership.
 
 #### Money ownership
 
-Money ownership **IS NOT** limited to members of the Community. Any owner (an individual or an organization) of a public key may own money: it only requires the key to match `Ouputs` of a transaction.
+Money ownership **IS NOT** limited to members of the Community. Any owner (an individual or an organization) of a Clé publique may own money: it only requires the key to match `Ouputs` of a transaction.
 
 #### Transfering money
 
@@ -339,9 +339,9 @@ Field | Description
 `Version` | denotes the current structure version.
 `Type` | Type of the document.
 `Currency` | contains the name of the currency. This is used to identify the target of the transaction, as several moneys may be UCP-based.
-`Issuers` | a list of public key, followed by a sequential integer
+`Issuers` | a list of Clé publique, followed by a sequential integer
 `Inputs` | a list linking `Issuers` (via INDEX) to coin sources
-`Outputs` | a list of public keys and amounts allowed to them
+`Outputs` | a list of Clé publiques and amounts allowed to them
 `Comment` | a comment to write on the transaction
 
 #### Validity
@@ -351,7 +351,7 @@ A Transaction structure is considered *valid* if:
 * Field `Version` equals `1`.
 * Field `Type` equals `Transaction`.
 * Field `Currency` is not empty.
-* Field `Issuers` is a multiline field whose lines are public keys.
+* Field `Issuers` is a multiline field whose lines are Clé publiques.
 * Field `Inputs` is a multiline field whose lines starts with an integer, followed by a colon, a source character (either `T`, `D`), a colon, an integer, a colon, a SHA-1 hash and an integer value
 * Field `Outputs` is a multiline field whose lines starts by a Base58 string, followed by a colon and an integer value
 * Field `Comment` is a string of maximum 255 characters, exclusively composed of alphanumeric characters, space, `-`, `_`, `:`, `/`, `;`, `*`, `[`, `]`, `(`, `)`, `?`, `!`, `^`, `+`, `=`, `@`, `&`, `~`, `#`, `{`, `}`, `|`, `\`, `<`, `>`, `%`, `.`. Must be present even if empty.
@@ -476,7 +476,7 @@ Here is an example compacting above [example 3](#example-3):
 
 A Block is a document gathering both:
 
-  * [Public key](#publickey) data in order to build a Web Of Trust (WoT) representation
+  * [Clé publique](#publickey) data in order to build a Web Of Trust (WoT) representation
   * [Transaction](#transaction) data to identify money units & ownership
 
 but also other informations like:
@@ -534,16 +534,16 @@ PoWMin                | The current minimum PoW difficulty                | Alwa
 Time                  | Time of generation                                | Always
 MedianTime            | Median date                                       | Always
 UniversalDividend     | Universal Dividend amount                         | **Optional**
-Issuer                | This block's issuer's public key                  | Always
+Issuer                | This block's issuer's Clé publique                  | Always
 PreviousHash          | Previous block fingerprint (SHA-1)             | from Block#1
-PreviousIssuer        | Previous block issuer's public key             | from Block#1
+PreviousIssuer        | Previous block issuer's Clé publique             | from Block#1
 Parameters            | Currency parameters.                             | **Block#0 only**
 MembersCount          | Number of members in the WoT, this block included | Always
 Identities            | New identities in the WoT                         | Always
 Joiners               | `IN` memberships                                  | Always
 Actives               | `IN` memberships                                  | Always
 Leavers               | `OUT` memberships                                 | Always
-Excluded              | Exluded members' public key                       | Always
+Excluded              | Exluded members' Clé publique                       | Always
 Transactions          | A liste of compact transactions                   | Always
 
 #### Coherence
@@ -553,24 +553,24 @@ To be a valid, a block must match the following rules:
 * `Version`, `Nonce`, `Number`, `PoWMin`, `Time`, `MedianTime`, `MembersCount` and `UniversalDividend` are integer values
 * `Currency` is a valid currency name
 * `PreviousHash` is an uppercased SHA-1 hash
-* `Issuer` and `PreviousIssuer` are [Public keys](#publickey)
+* `Issuer` and `PreviousIssuer` are [Clé publiques](#publickey)
 * `Identities` is a multiline field composed for each line of:
-  * `PUBLIC_KEY` : a [Public key](#publickey)
+  * `PUBLIC_KEY` : a [Clé publique](#publickey)
   * `SIGNATURE` : a [Signature](#signature)
   * `TIMESTAMP` : an integer
   * `USER_ID` : an identifier
 * `Joiners`, `Actives` and `Leavers` are multiline fields composed for each line of:
-  * `PUBLIC_KEY` : a [Public key](#publickey)
+  * `PUBLIC_KEY` : a [Clé publique](#publickey)
   * `SIGNATURE` : a [Signature](#signature)
   * `NUMBER` : an integer
   * `HASH` : an uppercased SHA1 string
   * `TIMESTAMP` : an integer
   * `USER_ID` : an identifier
 * `Excluded` is a multiline field composed for each line of:
-  * `PUBLIC_KEY` : a [Public key](#publickey)
+  * `PUBLIC_KEY` : a [Clé publique](#publickey)
 * `Certifications` is a multiline field composed for each line of:
-  * `PUBKEY_FROM` : a [Public key](#publickey) doing the certification
-  * `PUBKEY_TO` : a [Public key](#publickey) being certified
+  * `PUBKEY_FROM` : a [Clé publique](#publickey) doing the certification
+  * `PUBKEY_TO` : a [Clé publique](#publickey) being certified
   * `BLOCK_NUMBER` : a positive integer
   * `SIGNATURE` : a [Signature](#signature) of the certification
 * `Transactions` is a multiline field composed of [compact transactions](#compact-format)
@@ -588,7 +588,7 @@ The document must be ended with a `BOTTOM_SIGNATURE` [Signature](#signature).
 
 UCP uses P2P networks to manage community & money data. Since only members can write to the Blockchain, it is important to have authenticated peers so newly validated blocks can be efficiently sent to them, without any ambiguity.
 
-For that purpose, UCP defines a peering table containing, for a given node public key:
+For that purpose, UCP defines a peering table containing, for a given node Clé publique:
 
 * a currency name
 * a list of endpoints to contact the node
@@ -608,9 +608,9 @@ This link is made through a document called *Peer* whose format is described bel
     END_POINT_3
     [...]
 
-With the signature attached, this document certifies that this public key is owned by this server at given network endpoints.
+With the signature attached, this document certifies that this Clé publique is owned by this server at given network endpoints.
 
-The aggregation of all *Peer* documents is called the *peering table*, and allows to authentify addresses of all nodes identified by their public key.
+The aggregation of all *Peer* documents is called the *peering table*, and allows to authentify addresses of all nodes identified by their Clé publique.
 
 #### Fields details
 
@@ -619,7 +619,7 @@ Field | Description
 `Version` | denotes the current structure version.
 `Type`  | The document type.
 `Currency` | contains the name of the currency.
-`PublicKey` | the node's public key.
+`PublicKey` | the node's Clé publique.
 `Block` | Block number and hash. Value is used to target a blockchain and precise time reference.
 `Endpoints` | a list of endpoints to interact with the node
 `Endpoints` has a particular structure: it is made up of at least one line with each line following format:
@@ -647,7 +647,7 @@ To be a valid, a peer document must match the following rules:
 * `Version` equals `1`
 * `Type` equals `Peer`
 * `Currency` is a valid currency name
-* `PublicKey` is a [Public key](#publickey)
+* `PublicKey` is a [Clé publique](#publickey)
 * `Endpoints` is a multiline field
 
 The document must be ended with a `BOTTOM_SIGNATURE` [Signature](#signature).
@@ -727,7 +727,7 @@ To be valid, a block fingerprint (whole document + signature) must start with a 
 
 ##### Signature
 
-* A block must have a valid signature over the block's content, where associated public key is block's `Issuer` field.
+* A block must have a valid signature over the block's content, where associated Clé publique is block's `Issuer` field.
 
 ##### Dates
 
@@ -753,7 +753,7 @@ To be valid, a block fingerprint (whole document + signature) must start with a 
 
 * A block cannot have two certifications from a same `PUBKEY_FROM`, unless it is block#0.
 * A block cannot have two identical certifications (same `PUBKEY_FROM` and same `PUBKEY_TO` for the two certifications)
-* A block cannot have certifications for public keys present in either `Excluded` or `Leavers` fields.
+* A block cannot have certifications for Clé publiques present in either `Excluded` or `Leavers` fields.
 
 ##### Transactions
 
@@ -828,7 +828,7 @@ A `PUBLIC_KEY` whose last occurrence in blockchain is `Leavers` or `Excluded`, o
 
 ###### Revocation
 
-A member may *revoke* its membership to the currency by sending an `OUT` membership. Public keys under `Leavers` field are to be considered *revoked*.
+A member may *revoke* its membership to the currency by sending an `OUT` membership. Clé publiques under `Leavers` field are to be considered *revoked*.
 
 ##### Number
 
