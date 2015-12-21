@@ -30,10 +30,10 @@
 
 Word                  | Description
 --------------------- | -------------
-UCP                   | Acronyme pour *UC*oin *P*rotocol. A set of rules to create uCoin based currencies.
+UCP                   | Acronyme pour **UC**oin **P**rotocol. A set of rules to create uCoin based currencies.
 Signature             | The cryptographical act of certifying a document using a private key.
-WoT                   | Acronyme pour *W*eb *o*f *T*rust (Toile de confiance). A groupment of individuals recognizing each other's identity through public keys and certification mechanisms
-UD                    | Acronym for *Universal Dividend*. Means money issuance **directly** and **exclusively** by and to WoT members
+WoT                   | Acronyme pour **W**eb **o**f **T**rust (Toile de confiance). Groupement d'individus se reconnaissant leur identité respective au travers de mécanismes de clés publiques et de certifications.
+UD                    | Acronyme pour **U**niversal **D**ividend. Means money issuance **directly** and **exclusively** by and to WoT members
 
 ## Introduction
 
