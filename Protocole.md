@@ -85,7 +85,7 @@ This section deals with the various data formats used by UCP.
 
 #### Définition
 
-Une clé publique est entendue tel que définie par l'[Ed55219](https://fr.wikipedia.org/wiki/EdDSA).
+Une clé publique est entendue telle que définie par l'[Ed55219](https://fr.wikipedia.org/wiki/EdDSA).
 
 Son format est une chaîne de 43 ou 44 caractères en [Base58](https://fr.wikipedia.org/wiki/Base58), tel que l'exemple suivant:
 
