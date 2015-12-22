@@ -33,13 +33,13 @@ Mot                   | Description
 UCP                   | Acronyme pour **UC**oin **P**rotocol. A set of rules to create uCoin based currencies.
 Signature             | The cryptographical act of certifying a document using a private key.
 WoT                   | Acronyme pour **W**eb **o**f **T**rust (Toile de confiance). Groupement d'individus se reconnaissant leur identité respective au travers de mécanismes de clés publiques et de certifications.
-UD                    | Acronyme pour **U**niversal **D**ividend. Means money issuance **directly** and **exclusively** by and to WoT members
+UD                    | Acronyme pour **U**niversal **D**ividend (**D**ividende **U**niversel). Moyen d'émission de monnaie **directement** et **exclusivement** par et pour les membres de la Toile de confiance.
 
 ## Introduction
 
-UCP aims at defining a data format, interpretation of it and processing rules in order to build coherent free currency systems in a P2P environment. UCP is to be understood as an *abstract* protocol since it defines currency parameters and rules about them, but not their value which is implementation specific.
+L'UCP tend à définir un format de données, son interpretation et les règles de traitement de façon à un système de monnaie libre cohérent dans un environnemnt P2P. L'UCP doit être compris comme un protocole se **résumant** à la définition des paramètres monétaires et leurs règles, mais pas leur valeur qui est une implémentation spécifique.
 
-This document describes UCP in a bottom-up logic, so you will find first the details of the protocol (data format) to end with general protocol requirements.
+Ce document décrits l'UCP dans une logique bottom-up, ainsi vous trouverez d'abord les détails du protocole (format des données) pour finir par des exigences générales du protocole.
 
 ## Conventions
 
