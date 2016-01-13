@@ -45,7 +45,7 @@ Il faut maintenant le configurer en suivant les instructions :
 
 >$ ucoind init
 
-Voici un exemple des paramètres:
+Voici un exemple des paramètres (avec la version 0.12.0):
   
 > Checking UPNp features...
 
@@ -83,7 +83,7 @@ Maintenant, on le synchronise avec le réseau :
 Il n'y a plus qu'à le faire travailler :
 >$ ucoind start
 
-À ce stade, le nœud avec synchronise avec le réseau. Il reçoit et réémet la **blockchain**.
+À ce stade, le nœud avec synchronise avec le réseau. Il reçoit et réémet les blocks de la **blockchain**.
 Il peut faire encore plus en produisant des blocs de la blockchain.
 
 
