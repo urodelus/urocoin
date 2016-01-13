@@ -118,4 +118,6 @@ Il peut faire encore plus en produisant des blocs de la blockchain.
 >$ Weight in percent for previous issuers: **0.67**
 
 Pour suivre son activité :
->$ ucoind logs
+>~~$ ucoind logs (avec lea version 0.12.0)~é
+>$ tail -f ~/.config/ucoin/ucoin_default/ucoin.log (depuis la version 0.13.0)
+
