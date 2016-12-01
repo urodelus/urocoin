@@ -1,4 +1,4 @@
-Mise en service d'un nœud uCoin
+Mise en service d'un nœud uCoin (Ubuntu sur machine virtuelle)
 =
 Ayant découvert la [TRM](http://www.creationmonetaire.info/2012/11/theorie-relative-de-la-monnaie-2-718.html) par hasard, je me suis intéressé à la Monnaie et ai découvert le projet **uCoin**. Depuis janvier 2015, je faisais tourner le logiciel de test de monnaies libres **Cutecoin**.
 À la sortie de **Sakia**, la nouvelle version de celui-ci, je me suis dit qu'il fallait aller plus loin. J'ai donc décidé de ne plus être seulement _client_ du réseau mais également _serveur_ afin de contribuer à sa décentralisation.
