@@ -1,5 +1,5 @@
 # urocoin
-Dépôt transitoire de mes fichiers ou notes relatifs à Duniter (~~uCoin)
+Dépôt transitoire de mes fichiers ou notes relatifs à Duniter (~~uCoin~~)
 
 _Prétexte pour apprendre à utiliser Github ou pas._
 
