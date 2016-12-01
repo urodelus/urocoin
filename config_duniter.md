@@ -3,7 +3,8 @@
 ## DNS
 
 J'utilise No-Ip comme fournisseur. Sur mon compte, je crée un 'nom de domaine' ("**uro**.ddns.net" par exemple) que je relie à mon adresse Ip 'XXX.XXX.XXX.XXX' en cours. No-Ip se charge ensuite de toujours associé mon adresse Ip (dynamique) à ce nom de domaine (statique).
-! Ce service est gratuit, il faut donc revalider cete association dans les 30 jours sinon elle ne fonctionne plus. De plus le hostname 'perdu' n'est pas renouvelable, il faudra donc en changer.
+
+N.B.: Ce service est gratuit, il faut donc revalider cete association dans les 30 jours sinon elle ne fonctionne plus. De plus le hostname 'perdu' n'est pas renouvelable, il faudra donc en changer.
 
 > Le lien **WEB->Box** est créé
 
