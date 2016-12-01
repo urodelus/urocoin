@@ -1,5 +1,6 @@
 # Point configuration box / Duniter
-windows 8.1 + Duniter v0.50.5 décembre 2016
+
+_windows 8.1 + Duniter v0.50.5 décembre 2016_
 =
 ### DNS
 J'utilise No-Ip comme fournisseur. Sur mon compte, je crée un 'hostname' ("**uro**.ddns.net" par exemple) que je relie à mon adresse Ip en cours. No-Ip se charge ensuite de toujours associé mon adresse Ip (dynamique) à ce nom de domaine (statique).
