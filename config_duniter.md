@@ -24,6 +24,6 @@ Le logiciel Duniter étant installé, il faut lui indiquer par quelle porte pass
 > Le lien **WEB->Box->PC--port-->Duniter** est créé
 
 =
-_windows 8.1 + [Duniter](https://github.com/duniter/duniter/releases) v0.50.5 décembre 2016_
+_windows 8.1 + [Duniter](https://github.com/duniter/duniter/releases "Page des releases") v0.50.5 décembre 2016_
 
 
