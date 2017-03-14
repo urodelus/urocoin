@@ -10,7 +10,7 @@ N.B.: Ce service est gratuit, il faut donc penser à revalider cette association
 
 ## BOX
 
-* Il faut informer la box de la manip précédente. Dans l'onglet DynDNS, activer DynDNS puis choisir le service dans le menu déroulant ici _No-Ip_ puis entrer les identifiant et mot de passe du compte et enfin le nom de domaine choisi. Valider. Le statut doit passé au vert (et y rester !).
+* Il faut informer la box de la manip précédente. Dans l'onglet DynDNS, activer DynDNS puis choisir le service dans le menu déroulant ici _No-Ip_ puis entrer les identifiant et mot de passe du compte et enfin le nom de domaine choisi. Valider. Le statut doit passer au vert (et y rester !).
 * Il faut maintenant faire pointer ce nom de domaine vers l'adresse Ip du PC sur le réseau interne (derrière la box). Dans l'onglet DNS, entrer une adresse fixe par exemple '192.168.1.**50**' puis le nom de domaine puis cliquer sur ajouter.
 * Il faut maintenant associer cette adresse fixe au PC. Dans l'onglet DHCP, dans le champs adresses statiques, ajouter cette adresse '192.168.1.**50**' et sélectionner l'adresse Mac du PC dans la liste puis cliquer sur ajouter.
 * Il est aussi poosible dans l'onglet NAT d'activer le service UPnP qui gérera automatiqueement les règles de translations de ports si nécessaire.
