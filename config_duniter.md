@@ -4,7 +4,7 @@
 
 J'utilise _No-Ip_ comme fournisseur. Sur mon compte, je crée un 'nom de domaine' ("**uro**.ddns.net" par exemple) que je relie à mon adresse Ip externe 'XXX.XXX.XXX.XXX' en cours. _No-Ip_ se charge ensuite de toujours associé mon adresse Ip (dynamique) à ce nom de domaine (statique). Cela se fait grace à un petit logiciel à installer qui relève et transmet cette adresse toutes les 5 minutes.
 
-N.B.: Ce service est gratuit, il faut donc penser à revalider cette association dans les 30 jours sinon elle ne fonctionnera plus. De plus le hostname 'perdu' n'est semble pas renouvelable, il faudra donc en changer. Ce n'est pas gênant ici.
+N.B.: Ce service est gratuit, il faut donc penser à revalider cette association dans les 30 jours sinon elle ne fonctionnera plus. De plus le hostname 'perdu' ne semble pas renouvelable, il faudra donc en changer. Ce n'est pas gênant ici.
 
 > Le lien **WEB->Box** est créé
 
