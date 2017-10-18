@@ -1,4 +1,4 @@
-# Point configuration box / Duniter version 201710
+# Point configuration box / Duniter _version 201710_
 
 ## DNS
 
@@ -23,7 +23,6 @@ Le logiciel Duniter étant installé, il faut lui indiquer par quelle porte pass
 
 > Le lien **WEB->Box->PC--port-->Duniter** est créé
 
-=
 _ box SFR (NB6V-MAIN-R3.5.8) + windows 8.1 + [Duniter](https://github.com/duniter/duniter/releases "Page des releases") v1.5.9 28/08/2017_
 
 
